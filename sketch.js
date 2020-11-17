@@ -92,14 +92,16 @@ function draw(){
     fill("white");
     stroke("azure");
         textSize(18);
-    text("GAME OVER!!YOU HAVE TOUCHED THE RAILINGS!!!(r to replay)",50,250);
+    text("GAME OVER!!YOU HAVE TOUCHED THE RAILINGS!!!",50,250);
+    text(" click "r" to replay",200,250);
   } 
   else if(state==END1){
       background("black");
     fill("white");
     stroke("azure");
         textSize(18);
-    text("GAME OVER!!YOU HAVE TOUCHED THE EDGES!!!(r to replay)",50,250);
+    text("GAME OVER!!YOU HAVE TOUCHED THE EDGES!!!",50,250);
+     text(" click "r" to replay",200,250);
 }
   
   if((state==END)&&keyDown("r")){
