@@ -93,7 +93,8 @@ function draw(){
     stroke("azure");
         textSize(18);
     text("GAME OVER!!YOU HAVE TOUCHED THE RAILINGS!!!",50,250);
-    text(" click "r" to replay",200,250);
+    text(" click R to replay",200,280);
+    score=0;
   } 
   else if(state==END1){
       background("black");
@@ -101,17 +102,15 @@ function draw(){
     stroke("azure");
         textSize(18);
     text("GAME OVER!!YOU HAVE TOUCHED THE EDGES!!!",50,250);
-     text(" click "r" to replay",200,250);
+     text(" Reload to replay",200,280);
+     score=0;
 }
   
   if((state==END)&&keyDown("r")){
-    state=PLAY
+    state=PLAY;
   }
   
-  if((state==END1)&&keyDown("r")){
-    state=PLAY
-  }
-  
+ 
   
   
 if(ghost.isTouching(egrp)){
